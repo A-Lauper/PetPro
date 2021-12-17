@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginEnd="7dp"
+    app:cardBackgroundColor="@color/sea_foam_highlight">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textViewItemPriceSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_toStartOf="@+id/textViewItemPrice"
+            android:text="@string/dollar_symbol"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:text="@string/_0_00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@id/textViewItemPriceSymbol"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/product_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/textViewItemQuantityString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewItemName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:text="@string/qty" />
+
+        <TextView
+            android:id="@+id/textViewItemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewItemName"
+            android:layout_toEndOf="@+id/textViewItemQuantityString"
+            android:text="@string/_0" />
+
+        <TextView
+            android:id="@+id/textViewItemRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewItemName"
+            android:layout_alignParentEnd="true"
+            android:text="@string/remove"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="17sp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

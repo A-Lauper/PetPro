@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/pet_pro_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/cart"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/username"
+        android:title="@string/username"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item android:id="@+id/myAppointments"
+                android:title="@string/my_appointments"
+                />
+            <item android:id="@+id/buyItAgain"
+                android:title="@string/buy_it_again"
+                />
+            <item android:id="@+id/profile"
+                android:title="@string/profile"
+                />
+            <item android:id="@+id/purchaseHistory"
+                android:title="@string/purchase_history"
+                />
+            <item android:id="@+id/logout"
+                android:title="@string/logout"
+                />
+        </menu>
+    </item>
+
+</menu>
